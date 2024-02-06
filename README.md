@@ -356,3 +356,43 @@ area = limit(n_rectangles, n, oo)
 
 print(area) # prints 4/3
 ```
+
+## Ch2: Probability
+
+Imp concepts wrt DS - baye's Theorem , binomial distribution, beta distribution
+
+### Probability vs Odds
+Probability P(X) = $\frac{Favourable_Outcomes}{Total_number_of_outcomes}$
+whereas, Odds O(X) = $\frac{chances_of_winning}{chances_of_losing}$
+
+Since, Chances of Losing = 1 - Chances of Winning (in mutually exclusive outcomes)
+Example - Odds of winning a cricket match for India against England is 7:3 ->  i.e 7 chances of winning, 3 chances of losing.
+In probability terms - $\frac{winning} {(winning + losing )}$ = $\frac{7}{10}$ or 0.7 or 70%
+
+Thus, P(X) = $\frac{O(X)}{1 + O(X)}$
+
+### Joint Probabilities (AND)
+
+EX - Proabability of getting a Heads AND a 6 on a die ? 
+
+P( A AND B ) = P(A) x P(B) 
+
+### Union Probabilities (OR)
+
+EX - Getting a 4 OR a 6 on a die ?
+
+P(A OR B) = P(A) + P(B) - P ( A AND B )
+
+
+why  " - P(A AND B)?" -> to remove duplicates
+
+ex: Getting a head  OR  a 6 on a die ? -> possible sets:    *H1*  *H2*  *H3*  *H4*  *H5*  *H6* T1 T2 T3 T4 T5 *T6* = so favourable outcomes = 7, total outcomes = 12 ; therefore P(H OR 6) = $\frac{7}{12}$
+
+via Formula = P(H) = $\frac{1}{2}$ ; P(6) = $\frac{1}{6}$
+
+P( H OR 6) = $\frac{1}{2} + \frac{1}{6} - \frac{1}{12}$
+           = $\frac{4}{6} - \frac{1}{12}$
+           = $\frac{7}{12}$
+### Baye's Theorem and Conditional Probability
+
+
